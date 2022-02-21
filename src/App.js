@@ -116,6 +116,7 @@ function App() {
   }
   async function filterByMainIngredient() {
     setMeals([])
+    setCategories([])
     await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i='+searchInput)
     .then(res=>res.json())
     .then(data=>  {let displayCats = []
@@ -130,6 +131,7 @@ function App() {
   }
   async function filterByCategory() {
     setMeals([])
+    setCategories([])
     await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c='+searchInput)
     .then(res=>res.json())
     .then(data=>  {let displayCats = []
@@ -144,6 +146,7 @@ function App() {
   }
   async function filterByArea() {
     setMeals([])
+    setCategories([])
     await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a='+searchInput)
     .then(res=>res.json())
     .then(data=>  {let displayCats = []
@@ -159,7 +162,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <input
+      <input placeholder="enter your search input here"
             type="mealName"
             id="searchInput"
             onChange={searchInputHandler}
