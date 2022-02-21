@@ -1,0 +1,5 @@
+.Category {width: 50%; margin-left: 25%; background: #282c34; position: relative; padding: 20px; height: 100px;}
+.Category h2 {display: inline-block; color: white; margin: 0 !important; 
+ max-width: calc(100% - 100px); text-align: left; float: left;}
+.catImg { display: inline-block; float: right; position: absolute; right: 20px !important;}
+.Categeory .ant-card-body {width: 100%;}

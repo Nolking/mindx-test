@@ -1,0 +1,12 @@
+.meal {
+    background: #282c34; 
+    width: 50%; margin-left: 25%;
+    border-radius: 3px; padding: 10px 20px;
+}
+.meal h2 {color: white; font-size: 24px;}
+.meal h2:hover {color: red; }
+
+.meal h3 {color: white; font-size:16px;}
+
+.mealCategory {color: white; font-size: 16px;}
+.mealInstruction {color: white; text-align: left;}
